@@ -14,6 +14,15 @@ SkillNova EdTech Platform is a modern full-stack **E-learning application** desi
 
 ---
 
+## 🔥 Deployment  
+SkillNova is fully deployed and accessible online:  
+- **Frontend**: [Vercel Deployment](https://skillnova-edtech-platform.vercel.app)  
+- **Backend**: [Railway Deployment](https://skillnovaedtechplatform-production.up.railway.app)  
+
+> **Note:** Ensure your API environment variables are correctly set in the frontend `.env` file for smooth communication with the backend.
+
+---
+
 ## 🔧 Features
 ### ✅ **User Roles & Authentication**
 - **Two User Types**: 👨‍🏫 **Instructor** & 🎓 **Student**  
