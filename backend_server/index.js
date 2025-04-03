@@ -14,7 +14,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use( // for frontend req on another port 
     cors({
-        origin:"http://localhost:3000",
+        origin:["http://localhost:3000",
+            "https://skillnova-edtech-platform.vercel.app"
+        ]
         credentials:true
     })
 )

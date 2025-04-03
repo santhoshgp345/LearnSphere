@@ -26,6 +26,7 @@ import ViewCourse from "./pages/ViewCourse.jsx";
 // import VideoDetails from "./components/ViewCourse/VideoDetails.jsx";
 
 function App() {
+  console.log("Print backend url : ",import.meta.env.VITE_BASE_URL)
   return (
     <div className="w-screen min-h-screen bg-[#000814] flex flex-col">
       <NavBar />
