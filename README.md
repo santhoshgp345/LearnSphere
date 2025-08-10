@@ -131,7 +131,7 @@ npm run dev
 | Service  | Link                                                                 |
 | -------- | -------------------------------------------------------------------- |
 | Frontend | [Vercel](https://skillnova-edtech-platform.vercel.app)               |
-| Backend  | [Railway](https://skillnovaedtechplatform-production.up.railway.app) |
+| Backend  | [Render](https://skillnova-edtech-backend.onrender.com) |
 
 > 📌 Add respective environment variables in Vercel & Railway dashboard for production.
 
