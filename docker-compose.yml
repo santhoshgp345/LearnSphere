@@ -6,8 +6,8 @@ services:
     env_file:
       - ./backend_server/.env
     volumes:
-      - ./backend_server:/app  # 🔥 Live reload changes inside the container
-      - /app/node_modules       # Prevent overwriting node_modules
+      - ./backend_server:/app 
+      - /app/node_modules
     networks:
       - app_network
 
@@ -18,8 +18,8 @@ services:
     depends_on:
       - backend
     volumes:
-      - ./frontend_skillnova:/app  # 🔥 Live reload changes inside the container
-      - /app/node_modules           # Prevent overwriting node_modules
+      - ./frontend_skillnova:/app
+      - /app/node_modules 
     networks:
       - app_network
 

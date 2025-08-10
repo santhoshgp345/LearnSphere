@@ -39,7 +39,7 @@ function ReviewSlider() {
     fetchReviews();
   }, []);
 
-  const shouldLoop = reviews.length >= 3; // ✅ Loop sirf tab chale jab 3 ya usse zyada reviews ho
+  const shouldLoop = reviews.length >= 3;
 
   return (
     <div className="text-white">
@@ -47,7 +47,6 @@ function ReviewSlider() {
         {reviews.length === 0 ? (
           <p className="text-center text-gray-300">No reviews available</p>
         ) : reviews.length < 3 ? (
-          // ✅ Jab 1 ya 2 reviews ho, tab Swiper nahi chalega, bas static show karega
           <div className="flex gap-4 justify-center">
             {reviews.map((review, i) => (
               <div
@@ -101,27 +100,23 @@ function ReviewSlider() {
             ))}
           </div>
         ) : (
-          // ✅ Jab 3 ya usse zyada reviews ho, tabhi Swiper chalega
           <Swiper
-            slidesPerView="auto" // ✅ Auto adjust for better UX
+            slidesPerView="auto"
             spaceBetween={25}
-            loop={true} // ✅ Proper infinite loop
-            loopFillGroupWithBlank={true} // ✅ Prevents disappearing slides
-            centeredSlides={false} // ✅ Normal alignment
-            speed={1000} // ✅ Smooth transition speed
+            loop={true}
+            centeredSlides={false}
+            speed={1000}
             autoplay={{
-              delay: 2500, // ✅ 2.5 sec delay for better readability
-              disableOnInteraction: false, // ✅ Autoplay continues even after swipe
+              delay: 2500,
+              disableOnInteraction: false,
             }}
-            grabCursor={true} // ✅ Makes swiping feel more natural
-            effect="slide" // ✅ No fancy effects, just smooth sliding
-            loopedSlides={reviews.length} // ✅ Ensures correct number of looping slides
+            grabCursor={true}
+            effect="slide"
             modules={[Autoplay, FreeMode, Pagination]}
             className="w-full"
           >
             {reviews.map((review, i) => (
               <SwiperSlide key={i} className="w-[300px]">
-                {/* ✅ Fixed width for better alignment */}
                 <div className="flex flex-col gap-3 bg-gray-700 p-3 text-[14px] text-richblack-25 rounded-lg">
                   <div className="flex items-center gap-4">
                     <img

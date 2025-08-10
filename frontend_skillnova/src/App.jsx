@@ -35,17 +35,13 @@ function App() {
         <Route
           path="/about"
           element={
-            <OpenRoute>
               <About />
-            </OpenRoute>
           }
         />
          <Route
           path="/contact"
           element={
-            <OpenRoute>
               <Contact />
-            </OpenRoute>
           }
         />
         <Route

@@ -5,6 +5,7 @@ const router = express.Router();
 const {sendOTP, signup , login,changePassword} = require('../controllers/Auth.js');
 const {resetPassword,resetPasswordToken} = require('../controllers/resetPassword.js');
 const { auth } = require('../middlewares/auth.js');
+const { contactMail } = require('../controllers/contactMail.js');
 
 // map with the handler
 router.post("/verify-otp",sendOTP);
@@ -15,5 +16,6 @@ router.put("/changepassword",auth, changePassword);
 
 router.post("/reset-password-token",resetPasswordToken);
 router.post("/reset-password",resetPassword);
+router.post("/contact-us",contactMail);
 
 module.exports = router;
