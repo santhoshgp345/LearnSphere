@@ -12,18 +12,20 @@ const PORT = process.env.PORT || 8000;
 // add parsing middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use( // for frontend req on another port 
-    cors({
-        origin:["http://localhost:3000",
-            "https://skillnova-edtech-platform.vercel.app",
-            "https://skillnova-edtech-platform-git-main-bhivanshus-projects.vercel.app",
-            "https://skillnova-edtech-platform-llkbznmny-bhivanshus-projects.vercel.app"
-        ],
-        credentials:true,
-        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        allowedHeaders: ["Content-Type", "Authorization"]
-    })
-)
+app.use(
+  // for frontend req on another port
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://skillnova-edtech-platform.vercel.app",
+      "https://skillnova-edtech-platform-git-main-bhivanshus-projects.vercel.app",
+      "https://skillnova-edtech-platform-nzex5i33n-bhivanshus-projects.vercel.app",
+    ],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(expFileUpload({
     useTempFiles : true,
     tempFileDir : '/tmp/'
