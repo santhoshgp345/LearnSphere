@@ -41,7 +41,7 @@ exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
 </head>
 <body>
     <div class="container">
-        <a href="https://skillnova-edtech-project.vercel.app" style="font-size:20px; font-weight:bold; text-decoration:none; color:#000;">
+        <a href="https://skillnova-edtech-platform.vercel.app" style="font-size:20px; font-weight:bold; text-decoration:none; color:#000;">
             SkillNova - helping you learn better
         </a>
         <div class="message">Course Payment Confirmation</div>

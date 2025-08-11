@@ -59,7 +59,7 @@ exports.contactFormEmail = (firstname, lastname, email, phone, message) => {
 </head>
 <body>
     <div class="container">
-        <a href="https://skillnova-edtech-project.vercel.app" class="brand-link">
+        <a href="https://skillnova-edtech-platform.vercel.app" class="brand-link">
             SkillNova - helping you learn better
         </a>
         <div class="heading">📩 New Contact Form Submission</div>
