@@ -1,6 +1,6 @@
-# 🎓 SkillNova EdTech Platform
+# 🎓 LearnSphere Platform
 
-SkillNova is a full-fledged MERN-based E-learning platform that bridges the gap between students and instructors through an intuitive UI/UX, secured backend services, and seamless video course delivery. It also integrates secure payment processing and follows modern development workflows with Docker support.
+LearnSphere is a full-fledged MERN-based E-learning platform that bridges the gap between students and instructors through an intuitive UI/UX, secured backend services, and seamless video course delivery. It also integrates secure payment processing and follows modern development workflows with Docker support.
 
 ---
 
@@ -8,10 +8,9 @@ SkillNova is a full-fledged MERN-based E-learning platform that bridges the gap 
 
 * **Frontend**: React.js (Vite), Tailwind CSS
 * **Backend**: Node.js, Express.js
-* **Database**: MongoDB (Mongoose)
-* **Authentication**: JWT (Cookies Based)
+* **Database**: MongoDB 
+* **Authentication**: JWT
 * **Emails**: Nodemailer with Gmail SMTP
-* **Payments**: Razorpay (Test Mode)
 * **Containerization**: Docker, Docker Compose
 
 ---
@@ -37,11 +36,7 @@ SkillNova is a full-fledged MERN-based E-learning platform that bridges the gap 
   * Browse, purchase, and access video-based courses
   * Rate and review enrolled courses
 
-### 💳 Payment Gateway
 
-* Razorpay **Test Mode** integration
-* Order creation, payment verification
-* Handles success/failure flows gracefully
 
 ### 🖥️ Responsive UI/UX
 
@@ -62,12 +57,7 @@ SkillNova is a full-fledged MERN-based E-learning platform that bridges the gap 
 > ✅ **Ensure Docker is installed and running**
 > 👉 [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
-### 🔗 Clone the Repository
 
-```bash
-git clone https://github.com/Bhivanshu45/skillnova_edtech_platform.git
-cd skillnova_edtech_platform
-```
 
 ### ⚙️ Create Environment Files
 
@@ -75,7 +65,7 @@ cd skillnova_edtech_platform
 
 ```env
 PORT=8000
-MONGODB_URL=mongodb://mongo:27017/skillnova
+MONGODB_URL=mongodb://mongo:27017/LearnSphere
 JWT_SECRET=your_jwt_secret
 COOKIE_SECRET=your_cookie_secret
 
@@ -87,10 +77,9 @@ MAIL_USER=your_email@gmail.com
 MAIL_PASSWORD=your_app_password
 ```
 
-#### 🌐 `/frontend_skillnova/.env`
 
 ```env
-VITE_BASE_URL=http://localhost:8000/api/v1
+VITE_BASE_URL=http://localhost:80001/api/v1
 ```
 
 > 💡 **Gmail SMTP Note**: Enable [2-Step Verification](https://myaccount.google.com/security) and generate [App Password](https://myaccount.google.com/apppasswords)
@@ -104,7 +93,7 @@ docker-compose up --build
 ```
 
 * Frontend: [http://localhost:3000](http://localhost:3000)
-* Backend: [http://localhost:8000](http://localhost:8000)
+* Backend: [http://localhost:8001](http://localhost:8001)
 
 ---
 
@@ -114,28 +103,19 @@ docker-compose up --build
 # Step 1: Start MongoDB locally or use cloud DB
 
 # Step 2: Run Backend
-cd backend_server
+cd backend
 npm install
 npm run dev
 
 # Step 3: Run Frontend
-cd ../frontend_skillnova
+cd frontend
 npm install
 npm run dev
 ```
 
 ---
 
-## 🚀 Deployment (Live Links)
 
-| Service  | Link                                                                 |
-| -------- | -------------------------------------------------------------------- |
-| Frontend | [Vercel](https://skillnova-edtech-platform.vercel.app)               |
-| Backend  | [Render](https://skillnova-edtech-backend.onrender.com) |
-
-> 📌 Add respective environment variables in Vercel & Railway dashboard for production.
-
----
 
 ## ⚙️ Scripts
 
@@ -175,14 +155,9 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to fork, contribute, and build upon it!
 
 ---
+## 📌 Credits
+This project is inspired by [SkillNova](https://github.com/username/SkillNova).  
+All rights to the original idea/design belong to the SkillNova authors. This project was built purely for **learning and educational purposes**.  
 
-## 👨‍💻 Author
 
-Built with ❤️ by [Bhivanshu Lawaniya](https://github.com/Bhivanshu45)
 
----
-
-## 💬 Support
-
-For issues, open an [Issue](https://github.com/Bhivanshu45/skillnova_edtech_platform/issues)
-Or DM on [LinkedIn](https://www.linkedin.com/in/bhivanshu-lawaniya)
